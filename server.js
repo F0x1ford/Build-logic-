@@ -164,7 +164,7 @@ app.get("/typewriter/read", (req, res) => {
   const session = sessions.get(sid);
 
   if (!session || session.index >= [...session.text].length) {
-    return res.json({ value: "00000000" });
+    return res.json({ value: "00000001" });
   }
 
   const characters = [...session.text];
