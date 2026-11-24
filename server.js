@@ -166,12 +166,6 @@ client.on(Events.MessageCreate, async (message) => {
     index: 0
   });
 
-  console.log("[DEBUG SAVE]", {
-    sid: BUILD_LOGIC_SID,
-    text: limitedText,
-    sessionExists: sessions.has(BUILD_LOGIC_SID)
-  });
-
   console.log(
     `[DISCORD -> BUILD LOGIC] ${[...limitedText].length} caractères enregistrés`
   );
@@ -242,7 +236,6 @@ app.get("/typewriter/read", (req, res) => {
 
   // Fin du message
   if (session.index >= characters.length) {
-    console.log("[READ TEST] Fin du message : 00000001");
 
     return res.json({
       value: "00000001"
