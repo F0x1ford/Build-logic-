@@ -1,0 +1,17 @@
+
+{
+  "name": "build-logic-discord-bridge",
+  "version": "2.0.0",
+  "description": "Discord bridge compatible with IntensBLAPlite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
